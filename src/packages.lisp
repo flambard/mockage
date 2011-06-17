@@ -5,6 +5,7 @@
 
    #:mock-function
    #:unmock-function
+   #:original-function
    #:mocked-p
    #:all-mocked
    #:unmock-all

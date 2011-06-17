@@ -21,6 +21,10 @@
         (remhash function-name *mocked-functions*)
         function-name))))
 
+
+(defun original-function (function-name)
+  (gethash function-name *mocked-functions*))
+
 (defun mocked-p (symbol)
   (multiple-value-bind (value value-p) (gethash symbol *mocked-functions*)
     (declare (ignore value))
